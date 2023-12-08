@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #6f4f47;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+ #process-table{
+    position: absolute;
+    left: 13%;
+    width: 30%;
+}
+#bar-chart{
+    position: absolute;
+    right: 8%;
+    width: 40%;
+} 
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    table-layout: auto; 
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+    position: relative;
+    
+  }
+  
+  tr:nth-child(even) {
+    background-color:#ad939317;
+  }
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color:#624185;
+   z-index: -1;
+   font-size: 1.2em;
+}
+#bars {
+    height: 200px;
+    position: relative;
+}
+
+#bars div {
+    display: inline-block;
+    width: 30px;
+    background-color: #3498db;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#process-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#process-details th, #process-details td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+#process-details td.status-bar {
+    width: 100px;
+}
+
+#process-details .status-bar {
+    height: 10px;
+    background-color: #3498db;
+    display: inline-block;
+    margin: 0;
+}
+/* Existing CSS styles */
+
+
+
+#process-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#process-details th, #process-details td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#process-details td.status-bar {
+    width: 100px;
+}
+
+#process-details .status-bar {
+    height: 10px;
+    background-color: #3498db;
+    display: inline-block;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background:#3b474f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    margin: 0 auto;
+}
+
+.field {
+    margin: 10px 0;
+}
+
+.field label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.field span {
+    font-weight: bold;
+}
+
+.field span.value {
+    font-size: 1.2em;
+}
+#giantt{
+     position: absolute;
+     top: 70%;
+     left: 1%;
+}
+#readyQueue{
+    height: 60px;
+}
+.containerr {
+    background: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 47%;
+    margin: 0 auto;
+}
+
+.status-barr {
+    height: fit-content;
+    /* background:#61727d; */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.status-labell {
+    font-weight: bold;
+}
+.giantData{
+     
+    height: 16px;
+    text-align: center;
+    font-size: 0.7em;
+    
+}
+#play-again-button{
+     
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+}
+#play-again-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#042033; /* Change the color to your preference */
+    color: #fff; /* Text color */
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#play-again-button:hover {
+    background-color: #042033; /* Color on hover */
+    transform: scale(1.05); /* Slight scale increase on hover */
+}
+#play-another{
+     
+    position: absolute;
+    left: 2%;
+    top: 60%;
+}
+#play-another{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#042033; /* Change the color to your preference */
+    color: #fff; /* Text color */
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#play-another:hover {
+    background-color: #042033; /* Color on hover */
+    transform: scale(1.05); /* Slight scale increase on hover */
+}

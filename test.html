@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <link rel="icon" href="cpuu.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <h1>CPU Scheduling Visualization</h1>
+    <div id="process-table">
+        <h2 id="algoInfo">Table of Processes</h2>
+        <table id="myTable1">
+            <tr>
+              <th>process id</th>
+              <th>arrival time</th>
+              <th>burst time</th>
+              <th>priority</th>
+              <th>comp. tiime</th>
+              <th>turn around time</th>
+              <th>waiting time</th>
+            </tr>
+            <tbody id="tableBody">
+              
+            </tbody> 
+             
+          </table>
+    </div>
+    <button id="play-again-button" style="display: none;">Play Again</button>
+    <button id="play-another" style="display: none;">Play Another</button>
+    <div id="bar-chart">
+        <h2>Bar Chart</h2>
+        <div id="process-details">
+            <table id="myTable2">
+                <tr>
+                    <th>Process ID</th>
+                    <th width="70%">Status</th>
+                    <th>Remaining Burst Time</th>
+                    <th>Respon Time</th>
+                </tr>
+                <!-- Dummy rows for process details -->
+               <tbody id="tableBody2"> <tr>
+                    <!-- <td>P1</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>5</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td>
+                        <div class="bg" style="width: 100%" style="height: 100%;"></div>
+                        100%
+                    
+                    </td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr> -->
+                </tbody>
+                <!-- Add more dummy rows as needed -->
+            </table>
+        </div>
+        
+        <div class="container">
+            <h2>Performance Metrics</h2>
+            <div class="field">
+                <label>Average Turnaround Time:</label>
+                <span class="value" id="tatValue">--</span>
+            </div>
+            <div class="field">
+                <label>Average Wait Time:</label>
+                <span class="value" id="wtValue">--</span>
+            </div>
+            <!-- <div class="field">
+                <label>Total Execution Time:</label>
+                <span class="value" id="execValue">48.5 ms</span>
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <div class="containerr" id="giantt">
+        <h2>Giantt Chart</h2>
+        <!-- <div class="status-barr" id="readyQueue">
+          <table>  <tr><td  style="text-align:center">Ready Queue:</td></tr></table>
+          <table> <tbody id="tableBody4">
+                <tr>
+                    <td class="readyData">p1</td>
+                    <td class="readyData">p2</td>
+                    <td class="readyData">p3</td>
+                    <td class="readyData">p4</td>
+                    <td class="readyData">p5</td>
+                    <td class="readyData">p6</td>
+                    <td class="readyData">p7</td>
+                </tr>
+            </tbody>
+            </table>
+        </div> -->
+        <div class="status-barr">
+           <table id="table3">
+           <tbody id="tableBody3"> 
+            <!-- <tr>
+             
+                <td class="giantData">p1</td>
+                <td class="giantData">p2</td>
+                <td class="giantData">p3</td>
+                <td class="giantData">p4</td>
+                <td class="giantData">p5</td>
+                <td class="giantData">p6</td>
+                <td class="giantData">p7</td>
+                <td class="giantData">p8</td>
+                <td class="giantData">p9</td>
+                <td class="giantData">p10</td>
+                <td class="giantData">p11</td>
+                <td class="giantData">p12</td>
+                <td class="giantData">p2</td>
+                <td class="giantData">p4</td>
+                <td class="giantData">p7</td>
+                
+                
+
+            </tr>
+            <tr>
+                <td class="giantData">0-5</td>
+                <td class="giantData">5-7</td>
+                <td class="giantData">7-10</td>
+                <td class="giantData">10-12</td>
+                <td class="giantData">13-14</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                <td class="giantData">11-20</td>
+                 <td class="giantData">11-20</td>
+              
+                
+                
+            </tr> -->
+        </tbody>
+           </table>
+        </div>
+    </div>
+   
+
+    <script src="test.js"></script>
+    <!-- <script src="roundrobin.js"></script> -->
+</body>
+</html>

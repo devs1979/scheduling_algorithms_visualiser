@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <title>Home Page</title>
+       <link rel="icon" href="cpuu.png" type="image/x-icon">
+       <link rel="stylesheet" href="./index.css">
+       </head>
+<body>
+    <div class="box">
+        <div class="signin">
+
+        </div>
+        <div class="signup">
+            <h2 id="signup">Visualizer</h2>
+            <form action="/user/create_session" method="post">
+
+                <select name="cars" id="algos" class="inpts">
+                    <option value="" class="inpts">Choose Algorithm</option>
+                    <option value="FCFS" class="inpts">FCFS</option>
+                    <option value="SJF" class="inpts">SJF</option>
+                    <option value="SRTF" class="inpts">SRTF</option>
+                    <option value="Round Robin" class="inpts">Round Robin</option>
+                    <option value="Priority" class="inpts">Priority</option>
+                </select>
+                <select name="cars" id="timeQuanta" class="inpts" hidden>
+                    <option value="" class="inpts">Choose time Quanta</option>
+                    <option value="1" class="inpts">1</option>
+                    <option value="2" class="inpts">2</option>
+                    <option value="3" class="inpts">3</option>
+                    <option value="4" class="inpts">4</option>
+                    <option value="5" class="inpts">5</option>
+                    <option value="6" class="inpts">6</option>
+                    <option value="7" class="inpts">7</option>
+                    <option value="8" class="inpts">8</option>
+                    <option value="9" class="inpts">9</option>
+                    <option value="10" class="inpts">10</option>
+                    <option value="" class="inpts">Choose time Quanta</option>
+                </select>
+
+                <select name="cars" id="inputs" class="inpts">
+                    <option value="" class="inpts">Choose Input Type</option>
+                    <option value="manual" class="inpts">Manual</option>
+                    <option value="random" class="inpts">Random</option>
+                </select>
+
+                <div class="but" id="start"><input type="button" value="start" class="butt"/>
+
+            </form>
+        </div>
+        <div class="picture">
+
+        </div>
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
